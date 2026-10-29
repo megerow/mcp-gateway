@@ -47,6 +47,13 @@ spec:
           env:
             - name: ASPNETCORE_ENVIRONMENT
               value: "Development"
+            # Host port used by `kubectl port-forward`. McpEndpointMiddleware
+            # rejects MCP requests whose Origin header is not this value, so a
+            # browser-based client (including the portal's test console) gets a
+            # 403 when this does not match the forwarded port. Default is 8000;
+            # that port is taken by hplip-printer-applet on this machine.
+            - name: PublicOrigin
+              value: "http://localhost:8080/"
             - name: Storage__UseInMemoryStores
               value: "false"
             - name: Redis__ConnectionString
