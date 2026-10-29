@@ -1,0 +1,90 @@
+diff --git a/dotnet/Microsoft.McpGateway.Management/src/Microsoft.McpGateway.Management.csproj b/dotnet/Microsoft.McpGateway.Management/src/Microsoft.McpGateway.Management.csproj
+index 074cb4c..e8a5c2d 100644
+--- a/dotnet/Microsoft.McpGateway.Management/src/Microsoft.McpGateway.Management.csproj
++++ b/dotnet/Microsoft.McpGateway.Management/src/Microsoft.McpGateway.Management.csproj
+@@ -1,7 +1,7 @@
+ ﻿<Project Sdk="Microsoft.NET.Sdk">
+ 
+   <PropertyGroup>
+-    <TargetFramework>net8.0</TargetFramework>
++    <TargetFramework>net10.0</TargetFramework>
+     <ImplicitUsings>enable</ImplicitUsings>
+     <Nullable>enable</Nullable>
+     <Platforms>x64</Platforms>
+diff --git a/dotnet/Microsoft.McpGateway.Management/test/Microsoft.McpGateway.Management.Tests.csproj b/dotnet/Microsoft.McpGateway.Management/test/Microsoft.McpGateway.Management.Tests.csproj
+index 6047351..5ea1705 100644
+--- a/dotnet/Microsoft.McpGateway.Management/test/Microsoft.McpGateway.Management.Tests.csproj
++++ b/dotnet/Microsoft.McpGateway.Management/test/Microsoft.McpGateway.Management.Tests.csproj
+@@ -1,7 +1,7 @@
+ <Project Sdk="Microsoft.NET.Sdk">
+ 
+   <PropertyGroup>
+-    <TargetFramework>net8.0</TargetFramework>
++    <TargetFramework>net10.0</TargetFramework>
+     <LangVersion>latest</LangVersion>
+     <ImplicitUsings>enable</ImplicitUsings>
+     <Nullable>enable</Nullable>
+diff --git a/dotnet/Microsoft.McpGateway.Service/src/Microsoft.McpGateway.Service.csproj b/dotnet/Microsoft.McpGateway.Service/src/Microsoft.McpGateway.Service.csproj
+index da211ef..4bf1a9a 100644
+--- a/dotnet/Microsoft.McpGateway.Service/src/Microsoft.McpGateway.Service.csproj
++++ b/dotnet/Microsoft.McpGateway.Service/src/Microsoft.McpGateway.Service.csproj
+@@ -1,7 +1,7 @@
+ ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+ 
+   <PropertyGroup>
+-    <TargetFramework>net8.0</TargetFramework>
++    <TargetFramework>net10.0</TargetFramework>
+     <Nullable>enable</Nullable>
+     <ImplicitUsings>enable</ImplicitUsings>
+     <Platforms>x64</Platforms>
+diff --git a/dotnet/Microsoft.McpGateway.Service/test/Microsoft.McpGateway.Service.Tests.csproj b/dotnet/Microsoft.McpGateway.Service/test/Microsoft.McpGateway.Service.Tests.csproj
+index a65512b..26594e2 100644
+--- a/dotnet/Microsoft.McpGateway.Service/test/Microsoft.McpGateway.Service.Tests.csproj
++++ b/dotnet/Microsoft.McpGateway.Service/test/Microsoft.McpGateway.Service.Tests.csproj
+@@ -1,7 +1,7 @@
+ ﻿<Project Sdk="Microsoft.NET.Sdk">
+ 
+   <PropertyGroup>
+-    <TargetFramework>net8.0</TargetFramework>
++    <TargetFramework>net10.0</TargetFramework>
+     <LangVersion>latest</LangVersion>
+     <ImplicitUsings>enable</ImplicitUsings>
+     <Nullable>enable</Nullable>
+diff --git a/dotnet/Microsoft.McpGateway.Tools/src/Microsoft.McpGateway.Tools.csproj b/dotnet/Microsoft.McpGateway.Tools/src/Microsoft.McpGateway.Tools.csproj
+index c37fcd9..1817539 100644
+--- a/dotnet/Microsoft.McpGateway.Tools/src/Microsoft.McpGateway.Tools.csproj
++++ b/dotnet/Microsoft.McpGateway.Tools/src/Microsoft.McpGateway.Tools.csproj
+@@ -1,7 +1,7 @@
+ <Project Sdk="Microsoft.NET.Sdk.Web">
+ 
+   <PropertyGroup>
+-    <TargetFramework>net8.0</TargetFramework>
++    <TargetFramework>net10.0</TargetFramework>
+     <Nullable>enable</Nullable>
+     <ImplicitUsings>enable</ImplicitUsings>
+     <RootNamespace>Microsoft.McpGateway.Tools</RootNamespace>
+diff --git a/dotnet/Microsoft.McpGateway.Tools/test/Microsoft.McpGateway.Tools.Tests.csproj b/dotnet/Microsoft.McpGateway.Tools/test/Microsoft.McpGateway.Tools.Tests.csproj
+index 6a37499..30bfb76 100644
+--- a/dotnet/Microsoft.McpGateway.Tools/test/Microsoft.McpGateway.Tools.Tests.csproj
++++ b/dotnet/Microsoft.McpGateway.Tools/test/Microsoft.McpGateway.Tools.Tests.csproj
+@@ -1,7 +1,7 @@
+ <Project Sdk="Microsoft.NET.Sdk">
+ 
+   <PropertyGroup>
+-    <TargetFramework>net8.0</TargetFramework>
++    <TargetFramework>net10.0</TargetFramework>
+     <ImplicitUsings>enable</ImplicitUsings>
+     <Nullable>enable</Nullable>
+     <IsPackable>false</IsPackable>
+diff --git a/global.json b/global.json
+new file mode 100644
+index 0000000..545c92c
+--- /dev/null
++++ b/global.json
+@@ -0,0 +1,6 @@
++{
++  "sdk": {
++    "version": "10.0.302",
++    "rollForward": "latestFeature"
++  }
++}
